@@ -244,8 +244,8 @@ def compute_stats(df: pl.DataFrame, n_ok: int, n_skip: int) -> dict:
           .sort("date")
     )
 
-    # ── Top 10 machines by quantity ───────────────────────────────────────
-    top_machines = by_machine.head(10)
+    # ── Top 10 machines by uptime ─────────────────────────────────────────
+    top_machines = by_machine.sort("uptime_pct", descending=True).head(10)
 
     # ── Source split (machines vs MC) ─────────────────────────────────────
     by_source = (

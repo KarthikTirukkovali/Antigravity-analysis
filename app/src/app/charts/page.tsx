@@ -116,16 +116,16 @@ export default function ChartsPage() {
         {/* Row 2: Top 10 machines bar (full width) */}
         <div className="chart-card animate-fade-up delay-2" style={{ marginBottom:20 }}>
           <div className="chart-card-header">
-            <div className="chart-title">Top 10 Machines — Production Output</div>
-            <div className="chart-subtitle">Machines ranked by cumulative quantity</div>
+            <div className="chart-title">Top 10 Machines — Highest Uptime %</div>
+            <div className="chart-subtitle">Machines ranked by uptime percentage</div>
           </div>
           <ResponsiveContainer width="100%" height={280}>
             <BarChart data={top10} layout="vertical">
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" horizontal={false} />
-              <XAxis type="number" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} tickFormatter={fmtNum} />
+              <XAxis type="number" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} domain={[0, 100]} tickFormatter={v => `${v}%`} />
               <YAxis type="category" dataKey="name" width={180} tick={{ fill:'#c0c0d8', fontSize:10 }} tickLine={false} axisLine={false} />
               <Tooltip content={<TT />} />
-              <Bar dataKey="qty" name="Quantity" radius={[0,4,4,0]}>
+              <Bar dataKey="uptime" name="Uptime %" radius={[0,4,4,0]}>
                 {top10.map((_:any,i:number) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
               </Bar>
             </BarChart>

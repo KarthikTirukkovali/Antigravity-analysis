@@ -3122,20 +3122,12 @@
       "readings": 4317
     },
     {
-      "machine": "1900-9",
+      "machine": "RC-LAYING-ST-4B-OLD",
       "total_quantity": 0.0,
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 154
-    },
-    {
-      "machine": "RC-24C-Braiding-B",
-      "total_quantity": 0.0,
-      "avg_speed": 0.0,
-      "max_speed": 0.0,
-      "uptime_pct": 0.0,
-      "readings": 4304
+      "readings": 4318
     },
     {
       "machine": "1900-4",
@@ -3146,20 +3138,12 @@
       "readings": 166
     },
     {
-      "machine": "RC-LAYING-ST-4B-OLD",
+      "machine": "RC-24C-Braiding-B",
       "total_quantity": 0.0,
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 4318
-    },
-    {
-      "machine": "TPL-1---FHMT-machine-(457&500mm-Width,80mm-Pitch)---TPL-M-84",
-      "total_quantity": 0.0,
-      "avg_speed": 0.0,
-      "max_speed": 0.0,
-      "uptime_pct": 0.0,
-      "readings": 4315
+      "readings": 4304
     },
     {
       "machine": "GC-LAYING-19B-2-Tab-device",
@@ -3168,48 +3152,32 @@
       "max_speed": 0.0,
       "uptime_pct": 0.0,
       "readings": 3911
+    },
+    {
+      "machine": "1900-9",
+      "total_quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 154
+    },
+    {
+      "machine": "TPL-1---FHMT-machine-(457&500mm-Width,80mm-Pitch)---TPL-M-84",
+      "total_quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 4315
     }
   ],
   "top_machines": [
     {
-      "machine": "Electro-Tin-Plating-New",
-      "total_quantity": 2301816.0,
-      "avg_speed": 1576.6839607719076,
-      "max_speed": 2123.0,
-      "uptime_pct": 92.0,
-      "readings": 3161
-    },
-    {
-      "machine": "1900-10",
-      "total_quantity": 1470361.0,
-      "avg_speed": 1029.3174002751032,
-      "max_speed": 2563.0,
-      "uptime_pct": 75.5,
-      "readings": 2908
-    },
-    {
-      "machine": "Multi-Wire-drawing-machine-(8-wire)-101",
-      "total_quantity": 1390385.0,
-      "avg_speed": 2705.657672849916,
-      "max_speed": 5241.0,
-      "uptime_pct": 65.6,
-      "readings": 593
-    },
-    {
-      "machine": "GC-EXTRUDER-70E",
-      "total_quantity": 521386.7,
-      "avg_speed": 11.630609212481426,
-      "max_speed": 103.1,
-      "uptime_pct": 44.7,
-      "readings": 4038
-    },
-    {
-      "machine": "70-MM-F",
-      "total_quantity": 314299.0,
-      "avg_speed": 148.54701250578972,
-      "max_speed": 469.0,
-      "uptime_pct": 49.6,
-      "readings": 4318
+      "machine": "RC-Laying-4B-NEW",
+      "total_quantity": 1785.3,
+      "avg_speed": 1.2142724745134383,
+      "max_speed": 1.3,
+      "uptime_pct": 93.6,
+      "readings": 4316
     },
     {
       "machine": "Multi-Wire-drawing-machine-(8-wire)-103",
@@ -3220,12 +3188,12 @@
       "readings": 147
     },
     {
-      "machine": "Fluoro-Polymer-Extruder-Old-Rosendahl",
-      "total_quantity": 210417.6,
-      "avg_speed": 103.82540125610606,
-      "max_speed": 293.5,
-      "uptime_pct": 84.8,
-      "readings": 2866
+      "machine": "Electro-Tin-Plating-New",
+      "total_quantity": 2301816.0,
+      "avg_speed": 1576.6839607719076,
+      "max_speed": 2123.0,
+      "uptime_pct": 92.0,
+      "readings": 3161
     },
     {
       "machine": "TPL-Unit-3-EBeam-2MeV-New",
@@ -3236,12 +3204,28 @@
       "readings": 4154
     },
     {
-      "machine": "150MM-Extruder-\u2018A\u2019",
-      "total_quantity": 174544.0,
-      "avg_speed": 93.07252109704642,
-      "max_speed": 364.0,
-      "uptime_pct": 60.6,
-      "readings": 3792
+      "machine": "RC-Laying-42-B",
+      "total_quantity": 2335.7,
+      "avg_speed": 1.4795846943537097,
+      "max_speed": 4.0,
+      "uptime_pct": 85.9,
+      "readings": 4286
+    },
+    {
+      "machine": "100-mm-old",
+      "total_quantity": 13190.7,
+      "avg_speed": 9.174687065368568,
+      "max_speed": 18.4,
+      "uptime_pct": 85.1,
+      "readings": 1438
+    },
+    {
+      "machine": "Fluoro-Polymer-Extruder-Old-Rosendahl",
+      "total_quantity": 210417.6,
+      "avg_speed": 103.82540125610606,
+      "max_speed": 293.5,
+      "uptime_pct": 84.8,
+      "readings": 2866
     },
     {
       "machine": "FP-Extruder-New-ROSENDAHL",
@@ -3250,6 +3234,22 @@
       "max_speed": 151.6,
       "uptime_pct": 83.9,
       "readings": 3856
+    },
+    {
+      "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-294",
+      "total_quantity": 2090.3,
+      "avg_speed": 1.0831400742115027,
+      "max_speed": 2.2,
+      "uptime_pct": 81.1,
+      "readings": 4312
+    },
+    {
+      "machine": "1900-8",
+      "total_quantity": 10459.2,
+      "avg_speed": 7.2468055555555555,
+      "max_speed": 11.6,
+      "uptime_pct": 80.6,
+      "readings": 1440
     }
   ],
   "by_source": [
