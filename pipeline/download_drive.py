@@ -19,8 +19,11 @@ def download_gdrive_folder(folder_url, output_dir="Downloaded_Data"):
     os.makedirs(output_dir, exist_ok=True)
     
     # Run gdown command
+    import zipfile
+    from pathlib import Path
+    import glob
+
     try:
-        # We use subprocess because gdown's python API for folders can be finicky
         cmd = [
             sys.executable, "-m", "gdown", 
             "--folder", folder_url, 
@@ -28,7 +31,17 @@ def download_gdrive_folder(folder_url, output_dir="Downloaded_Data"):
         ]
         print(f"Executing: {' '.join(cmd)}")
         subprocess.check_call(cmd)
-        print("\n✅ Download completed successfully!")
+        
+        # Unzip all downloaded files
+        print("Extracting downloaded ZIP files...")
+        zip_files = glob.glob(os.path.join(output_dir, "*.zip"))
+        for zip_path in zip_files:
+            print(f"Extracting {zip_path}...")
+            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+                zip_ref.extractall(output_dir)
+            os.remove(zip_path) # Clean up zip file
+            
+        print("\n✅ Download and extraction completed successfully!")
     except subprocess.CalledProcessError as e:
         print(f"\n❌ Failed to download folder. Error: {e}")
         print("Please ensure the Google Drive folder permissions are set to 'Anyone with the link'.")

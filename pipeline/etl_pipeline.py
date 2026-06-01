@@ -142,14 +142,7 @@ def read_file(path: Path) -> Optional[pl.DataFrame]:
 
 # ── Discover all CSV files ─────────────────────────────────────────────────
 def discover_files() -> list[Path]:
-    paths = []
-    for day_dir in sorted(RAW_DIR.iterdir()):
-        if not day_dir.is_dir():
-            continue
-        for sub in ("machines", "MC"):
-            sub_path = day_dir / sub
-            if sub_path.is_dir():
-                paths.extend(sorted(sub_path.glob("*.csv")))
+    paths = list(RAW_DIR.rglob("*.csv"))
     logger.info(f"Discovered {len(paths)} CSV files across {RAW_DIR}")
     return paths
 
