@@ -1,6 +1,8 @@
 'use client'
 
+import React, { useState, useMemo } from 'react'
 import { useDynamicStats, fmtNum, fmt, fmtPct } from '@/lib/stats'
+import statsData from '../../../public/data/summary_stats.json'
 import TimelineSelector from '@/components/TimelineSelector'
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
@@ -24,15 +26,27 @@ const TT = ({ active, payload, label }: any) => {
 
 export default function ChartsPage() {
   const stats = useDynamicStats()
-  const { daily_production, daily_uptime, by_machine, top_machines, by_category } = stats
+  const { by_machine, top_machines, by_category } = stats
 
-  const dailyProd = (daily_production as any[]).map(d => ({
-    date: d.date?.slice(5), qty: Math.round(d.total_qty),
-  }))
+  // Local state for machine specific trends
+  const allMachines = useMemo(() => Array.from(new Set(statsData.daily_by_machine.map(d => d.machine))).sort(), [])
+  const allDates = useMemo(() => Array.from(new Set(statsData.daily_by_machine.map(d => d.date))).sort(), [])
+  
+  const [selectedMachine, setSelectedMachine] = useState<string>(allMachines[0] || '')
+  const [localStart, setLocalStart] = useState<string>(allDates[0] || '')
+  const [localEnd, setLocalEnd] = useState<string>(allDates[allDates.length - 1] || '')
 
-  const dailyUptime = (daily_uptime as any[]).map(d => ({
-    date: d.date?.slice(5), uptime: d.uptime_pct, speed: d.avg_speed,
-  }))
+  const machineTrends = useMemo(() => {
+    return statsData.daily_by_machine
+      .filter(d => d.machine === selectedMachine && d.date >= localStart && d.date <= localEnd)
+      .map(d => ({
+        date: d.date.slice(5),
+        uptime: d.uptime_pct,
+        speed: d.avg_speed,
+        qty: d.quantity
+      }))
+  }, [selectedMachine, localStart, localEnd])
+
 
   const top10 = (top_machines as any[]).slice(0, 10).map(m => ({
     name: m.machine.length > 22 ? m.machine.slice(0, 22) + '…' : m.machine,
@@ -160,6 +174,86 @@ export default function ChartsPage() {
               <Scatter data={scatterData} fill="#6366f1" fillOpacity={0.7} />
             </ScatterChart>
           </ResponsiveContainer>
+        </div>
+
+        {/* Machine Specific Trends */}
+        <div className="section-header animate-fade-up delay-4" style={{ marginTop: 40 }}>
+          <h2 className="section-title">Machine Specific Trends</h2>
+          <p className="section-subtitle">Deep dive into a single machine's performance over time</p>
+        </div>
+
+        <div className="chart-card animate-fade-up delay-4" style={{ marginBottom: 20 }}>
+          <div style={{ display: 'flex', gap: 16, marginBottom: 20, flexWrap: 'wrap' }}>
+            <div>
+              <label style={{ display: 'block', fontSize: 11, color: '#8888aa', marginBottom: 4 }}>Select Machine</label>
+              <select 
+                value={selectedMachine} 
+                onChange={e => setSelectedMachine(e.target.value)}
+                style={{ background: '#16161f', color: '#f0f0f8', border: '1px solid rgba(255,255,255,0.1)', padding: '6px 12px', borderRadius: 4 }}
+              >
+                {allMachines.map(m => <option key={m} value={m}>{m}</option>)}
+              </select>
+            </div>
+            <div>
+              <label style={{ display: 'block', fontSize: 11, color: '#8888aa', marginBottom: 4 }}>From Date</label>
+              <input 
+                type="date" 
+                value={localStart} 
+                onChange={e => setLocalStart(e.target.value)}
+                min={allDates[0]} max={allDates[allDates.length - 1]}
+                style={{ background: '#16161f', color: '#f0f0f8', border: '1px solid rgba(255,255,255,0.1)', padding: '4px 12px', borderRadius: 4 }}
+              />
+            </div>
+            <div>
+              <label style={{ display: 'block', fontSize: 11, color: '#8888aa', marginBottom: 4 }}>To Date</label>
+              <input 
+                type="date" 
+                value={localEnd} 
+                onChange={e => setLocalEnd(e.target.value)}
+                min={allDates[0]} max={allDates[allDates.length - 1]}
+                style={{ background: '#16161f', color: '#f0f0f8', border: '1px solid rgba(255,255,255,0.1)', padding: '4px 12px', borderRadius: 4 }}
+              />
+            </div>
+          </div>
+
+          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 20 }}>
+            <div style={{ background: 'rgba(0,0,0,0.2)', padding: 16, borderRadius: 8 }}>
+              <div className="chart-title" style={{ marginBottom: 12 }}>Uptime %</div>
+              <ResponsiveContainer width="100%" height={200}>
+                <LineChart data={machineTrends}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                  <XAxis dataKey="date" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} />
+                  <YAxis tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} domain={[0,100]} tickFormatter={v => `${v}%`} />
+                  <Tooltip content={<TT />} />
+                  <Line type="monotone" dataKey="uptime" name="Uptime %" stroke="#10b981" strokeWidth={2} dot={{ r:2 }} activeDot={{ r:4 }} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+            <div style={{ background: 'rgba(0,0,0,0.2)', padding: 16, borderRadius: 8 }}>
+              <div className="chart-title" style={{ marginBottom: 12 }}>Production Quantity</div>
+              <ResponsiveContainer width="100%" height={200}>
+                <LineChart data={machineTrends}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                  <XAxis dataKey="date" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} />
+                  <YAxis tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} tickFormatter={fmtNum} />
+                  <Tooltip content={<TT />} />
+                  <Line type="monotone" dataKey="qty" name="Quantity" stroke="#f59e0b" strokeWidth={2} dot={{ r:2 }} activeDot={{ r:4 }} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+            <div style={{ background: 'rgba(0,0,0,0.2)', padding: 16, borderRadius: 8 }}>
+              <div className="chart-title" style={{ marginBottom: 12 }}>Average Speed</div>
+              <ResponsiveContainer width="100%" height={200}>
+                <LineChart data={machineTrends}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                  <XAxis dataKey="date" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} />
+                  <YAxis tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} />
+                  <Tooltip content={<TT />} />
+                  <Line type="monotone" dataKey="speed" name="Speed" stroke="#6366f1" strokeWidth={2} dot={{ r:2 }} activeDot={{ r:4 }} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
         </div>
 
       </div>
