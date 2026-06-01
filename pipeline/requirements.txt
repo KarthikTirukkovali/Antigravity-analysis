@@ -1,0 +1,4 @@
+polars>=0.20.0
+loguru>=0.7.2
+tqdm>=4.66.0
+faker>=24.0.0

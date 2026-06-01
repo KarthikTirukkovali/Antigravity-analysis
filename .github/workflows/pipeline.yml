@@ -1,0 +1,64 @@
+name: Data Pipeline CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pipeline/**'
+      - 'raw_data/**'
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    name: Run ETL Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install Python dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Generate sample data (if raw_data is empty)
+        run: |
+          FILE_COUNT=$(find raw_data -name "*.csv" 2>/dev/null | wc -l)
+          if [ "$FILE_COUNT" -lt 100 ]; then
+            echo "raw_data has fewer than 100 CSV files — running generate_data.py …"
+            python pipeline/generate_data.py
+          else
+            echo "raw_data has $FILE_COUNT files — skipping generation."
+          fi
+
+      - name: Run ETL pipeline
+        run: python pipeline/etl_pipeline.py
+
+      - name: Copy stats to Next.js public directory
+        run: |
+          mkdir -p app/public/data
+          cp output/summary_stats.json app/public/data/summary_stats.json
+          echo "Copied summary_stats.json to app/public/data/"
+
+      - name: Commit updated stats
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: update summary_stats.json from pipeline run [skip ci]"
+          file_pattern: "app/public/data/summary_stats.json output/pipeline.log"
+          branch: main
+
+      - name: Upload pipeline artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-outputs
+          path: |
+            output/master_data.csv
+            output/summary_stats.json
+            output/pipeline.log
+          retention-days: 30
