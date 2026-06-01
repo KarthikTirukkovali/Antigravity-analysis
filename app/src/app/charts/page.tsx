@@ -73,45 +73,6 @@ export default function ChartsPage() {
           <TimelineSelector />
         </div>
 
-        {/* Row 1: Daily prod + uptime side by side */}
-        <div className="grid-2 animate-fade-up delay-1">
-          <div className="chart-card">
-            <div className="chart-card-header">
-              <div className="chart-title">Daily Production Volume</div>
-              <div className="chart-subtitle">Total quantity across all machines per day</div>
-            </div>
-            <ResponsiveContainer width="100%" height={260}>
-              <BarChart data={dailyProd}>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
-                <XAxis dataKey="date" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} />
-                <YAxis tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} tickFormatter={fmtNum} />
-                <Tooltip content={<TT />} />
-                <Bar dataKey="qty" name="Quantity" radius={[4,4,0,0]}>
-                  {dailyProd.map((_:any,i:number) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-
-          <div className="chart-card">
-            <div className="chart-card-header">
-              <div className="chart-title">Daily Uptime & Avg Speed</div>
-              <div className="chart-subtitle">Fleet uptime % and average line speed by day</div>
-            </div>
-            <ResponsiveContainer width="100%" height={260}>
-              <LineChart data={dailyUptime}>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
-                <XAxis dataKey="date" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} />
-                <YAxis yAxisId="l" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} tickFormatter={v => `${v}%`} domain={[0,100]} />
-                <YAxis yAxisId="r" orientation="right" tick={{ fill:'#8888aa', fontSize:10 }} tickLine={false} axisLine={false} />
-                <Tooltip content={<TT />} />
-                <Legend wrapperStyle={{ color:'#8888aa', fontSize:11 }} />
-                <Line yAxisId="l" type="monotone" dataKey="uptime" name="Uptime %" stroke="#10b981" strokeWidth={2} dot={{ r:2 }} activeDot={{ r:4 }} />
-                <Line yAxisId="r" type="monotone" dataKey="speed" name="Avg Speed" stroke="#6366f1" strokeWidth={2} dot={{ r:2 }} activeDot={{ r:4 }} />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
 
         {/* Row 2: Top 10 machines bar (full width) */}
         <div className="chart-card animate-fade-up delay-2" style={{ marginBottom:20 }}>
