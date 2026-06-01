@@ -7,6 +7,8 @@ on:
       - 'pipeline/**'
       - 'raw_data/**'
   workflow_dispatch:
+  schedule:
+    - cron: '30 4 * * *' # 04:30 UTC = 10:00 AM IST
 
 jobs:
   run-pipeline:
