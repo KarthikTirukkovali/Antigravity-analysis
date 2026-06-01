@@ -41,7 +41,7 @@ def download_gdrive_folder(folder_url, output_dir="Downloaded_Data"):
                 zip_ref.extractall(output_dir)
             os.remove(zip_path) # Clean up zip file
             
-        print("\n✅ Download and extraction completed successfully!")
+        print("\nDownload and extraction completed successfully!")
     except subprocess.CalledProcessError as e:
         print(f"\n❌ Failed to download folder. Error: {e}")
         print("Please ensure the Google Drive folder permissions are set to 'Anyone with the link'.")
