@@ -8,7 +8,7 @@ on:
       - 'raw_data/**'
   workflow_dispatch:
   schedule:
-    - cron: '30 4 * * *' # 04:30 UTC = 10:00 AM IST
+    - cron: '0 * * * *' # Runs at the top of every hour (e.g. 10:00, 11:00)
 
 jobs:
   run-pipeline:
