@@ -27,18 +27,13 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r pipeline/requirements.txt
 
-      - name: Generate sample data (if raw_data is empty)
-        run: |
-          FILE_COUNT=$(find raw_data -name "*.csv" 2>/dev/null | wc -l)
-          if [ "$FILE_COUNT" -lt 100 ]; then
-            echo "raw_data has fewer than 100 CSV files — running generate_data.py …"
-            python pipeline/generate_data.py
-          else
-            echo "raw_data has $FILE_COUNT files — skipping generation."
-          fi
+      - name: Download data from Google Drive
+        run: python pipeline/download_drive.py
 
       - name: Run ETL pipeline
         run: python pipeline/etl_pipeline.py
+        env:
+          RAW_DIR: Downloaded_Data
 
       - name: Copy stats to Next.js public directory
         run: |

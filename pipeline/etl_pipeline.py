@@ -30,7 +30,8 @@ from tqdm import tqdm
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 BASE_DIR   = Path(__file__).resolve().parent.parent
-RAW_DIR    = BASE_DIR / "Raw data"
+_env_raw   = os.environ.get("RAW_DIR")
+RAW_DIR    = Path(_env_raw) if _env_raw else BASE_DIR / "Raw data"
 OUTPUT_DIR = BASE_DIR / "output"
 LOG_FILE   = OUTPUT_DIR / "pipeline.log"
 
