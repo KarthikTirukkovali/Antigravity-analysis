@@ -1,16 +1,874 @@
 {
   "summary": {
     "total_quantity": 2301816.0,
-    "avg_speed": 60.08,
-    "uptime_pct": 44.53,
-    "total_readings": 191690,
-    "active_readings": 85366,
-    "unique_machines": 77,
-    "unique_dates": 2,
-    "files_processed": 145,
-    "files_skipped": 173
+    "avg_speed": 51.76,
+    "uptime_pct": 46.04,
+    "total_readings": 285688,
+    "active_readings": 131535,
+    "unique_machines": 84,
+    "unique_dates": 3,
+    "files_processed": 223,
+    "files_skipped": 255
   },
   "daily_by_machine": [
+    {
+      "date": "2026-05-30",
+      "machine": "100-mm-old",
+      "category": "100-mm",
+      "source": "machines",
+      "quantity": 13190.7,
+      "avg_speed": 9.174687065368568,
+      "max_speed": 18.4,
+      "uptime_pct": 85.1,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "150MM-Extruder-\u2018A\u2019",
+      "category": "150MM-Extruder",
+      "source": "machines",
+      "quantity": 71811.0,
+      "avg_speed": 78.0554347826087,
+      "max_speed": 304.0,
+      "uptime_pct": 48.4,
+      "readings": 920
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "1900-1",
+      "category": "1900",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "1900-10",
+      "category": "1900",
+      "source": "machines",
+      "quantity": 557472.0,
+      "avg_speed": 680.6739926739926,
+      "max_speed": 2546.0,
+      "uptime_pct": 61.5,
+      "readings": 819
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "1900-7",
+      "category": "1900",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1398
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "1900-8",
+      "category": "1900",
+      "source": "machines",
+      "quantity": 10459.2,
+      "avg_speed": 7.2468055555555555,
+      "max_speed": 11.6,
+      "uptime_pct": 80.6,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "1900-9",
+      "category": "1900",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 154
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "25mm+30mm-Fluoropolymer-Extrusion-Line,GEMWELL",
+      "category": "25mm",
+      "source": "machines",
+      "quantity": 36109.4,
+      "avg_speed": 25.84080171796707,
+      "max_speed": 45.5,
+      "uptime_pct": 98.7,
+      "readings": 1397
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "54-Stranding-Machine-A",
+      "category": "54-Stranding",
+      "source": "machines",
+      "quantity": 234.0,
+      "avg_speed": 2.3636363636363638,
+      "max_speed": 13.0,
+      "uptime_pct": 32.3,
+      "readings": 99
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "60MM-PVC-EXTRUDER,-SUPERMAC",
+      "category": "60MM-PVC",
+      "source": "machines",
+      "quantity": 77197.0,
+      "avg_speed": 53.604791666666664,
+      "max_speed": 171.1,
+      "uptime_pct": 58.9,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "70-MM-F",
+      "category": "70-MM",
+      "source": "machines",
+      "quantity": 127333.0,
+      "avg_speed": 88.42569444444445,
+      "max_speed": 462.0,
+      "uptime_pct": 29.0,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Drum-Twister-\u2018A\u2019",
+      "category": "Drum-Twister",
+      "source": "machines",
+      "quantity": 4054.0,
+      "avg_speed": 4.335828877005348,
+      "max_speed": 21.0,
+      "uptime_pct": 42.6,
+      "readings": 935
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "E-Beam-2Mev",
+      "category": "E-Beam",
+      "source": "machines",
+      "quantity": 7916.0,
+      "avg_speed": 69.43859649122807,
+      "max_speed": 140.0,
+      "uptime_pct": 59.6,
+      "readings": 114
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Electro-Tin-Plating-New",
+      "category": "Electro-Tin",
+      "source": "machines",
+      "quantity": 569683.0,
+      "avg_speed": 1552.2697547683924,
+      "max_speed": 2094.0,
+      "uptime_pct": 87.2,
+      "readings": 367
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Extruder-Machine-70-mm-A",
+      "category": "Extruder-Machine",
+      "source": "machines",
+      "quantity": 2600.0,
+      "avg_speed": 22.033898305084747,
+      "max_speed": 138.0,
+      "uptime_pct": 33.9,
+      "readings": 118
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "FP-Extruder-New-ROSENDAHL",
+      "category": "FP-Extruder",
+      "source": "machines",
+      "quantity": 130769.4,
+      "avg_speed": 91.11797909407666,
+      "max_speed": 111.1,
+      "uptime_pct": 85.8,
+      "readings": 1435
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Fluoro-Polymer-Extruder-Old-Rosendahl",
+      "category": "Fluoro-Polymer",
+      "source": "machines",
+      "quantity": 210417.6,
+      "avg_speed": 146.22251563585823,
+      "max_speed": 293.5,
+      "uptime_pct": 87.8,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC---12-BRAIDING---E",
+      "category": "GC",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-12-BRAIDING---G",
+      "category": "GC",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-24C-Braiding-C",
+      "category": "GC",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1393
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-ARMORING-72B-OLD",
+      "category": "GC-ARMORING",
+      "source": "machines",
+      "quantity": 4686.7,
+      "avg_speed": 3.2589707927677334,
+      "max_speed": 29.7,
+      "uptime_pct": 25.8,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-ARMORING-72B-Poineer-New",
+      "category": "GC-ARMORING",
+      "source": "machines",
+      "quantity": 8583.0,
+      "avg_speed": 5.960416666666666,
+      "max_speed": 24.0,
+      "uptime_pct": 43.2,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-Armouring-30B",
+      "category": "GC-Armouring",
+      "source": "machines",
+      "quantity": 3584.3,
+      "avg_speed": 2.4927727588603195,
+      "max_speed": 19.5,
+      "uptime_pct": 32.9,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-Armouring-48C",
+      "category": "GC-Armouring",
+      "source": "machines",
+      "quantity": 6988.4,
+      "avg_speed": 4.856914523974983,
+      "max_speed": 13.2,
+      "uptime_pct": 55.2,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-EXTRUDER-70B",
+      "category": "GC-EXTRUDER",
+      "source": "machines",
+      "quantity": 41471.4,
+      "avg_speed": 28.7975,
+      "max_speed": 99.5,
+      "uptime_pct": 42.6,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-EXTRUDER-70C",
+      "category": "GC-EXTRUDER",
+      "source": "machines",
+      "quantity": 37447.9,
+      "avg_speed": 26.00534722222222,
+      "max_speed": 156.1,
+      "uptime_pct": 33.4,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-EXTRUDER-70D",
+      "category": "GC-EXTRUDER",
+      "source": "machines",
+      "quantity": 53705.4,
+      "avg_speed": 37.29541666666667,
+      "max_speed": 248.9,
+      "uptime_pct": 44.8,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-EXTRUDER-70E",
+      "category": "GC-EXTRUDER",
+      "source": "machines",
+      "quantity": 521386.7,
+      "avg_speed": 14.219343575418993,
+      "max_speed": 77.4,
+      "uptime_pct": 52.1,
+      "readings": 1432
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-LAYING-19B-2-Tab-device",
+      "category": "GC-LAYING",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1116
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-LAYING-ST-8B-New",
+      "category": "GC-LAYING",
+      "source": "machines",
+      "quantity": 13209.7,
+      "avg_speed": 9.179027777777778,
+      "max_speed": 24.6,
+      "uptime_pct": 60.6,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-Laying-37B-NEW",
+      "category": "GC-Laying",
+      "source": "machines",
+      "quantity": 3244.6,
+      "avg_speed": 2.2546907574704655,
+      "max_speed": 14.6,
+      "uptime_pct": 28.3,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-Pairing-11H",
+      "category": "GC-Pairing",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-SHEATHING-100MM-OLD",
+      "category": "GC-SHEATHING",
+      "source": "machines",
+      "quantity": 9747.5,
+      "avg_speed": 6.769027777777778,
+      "max_speed": 17.2,
+      "uptime_pct": 53.6,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-SHEATHING-80A",
+      "category": "GC-SHEATHING",
+      "source": "machines",
+      "quantity": 18360.6,
+      "avg_speed": 13.052414772727273,
+      "max_speed": 22.8,
+      "uptime_pct": 93.3,
+      "readings": 1408
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-SHEATHING-80B",
+      "category": "GC-SHEATHING",
+      "source": "machines",
+      "quantity": 33453.5,
+      "avg_speed": 23.22875,
+      "max_speed": 91.8,
+      "uptime_pct": 50.1,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-SHEATHING-80C",
+      "category": "GC-SHEATHING",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-SHEATHING-80D",
+      "category": "GC-SHEATHING",
+      "source": "machines",
+      "quantity": 11120.7,
+      "avg_speed": 11.740236275191105,
+      "max_speed": 42.1,
+      "uptime_pct": 81.0,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "GC-SHEATHING-SECTION-80-100-New-Dummy-data",
+      "category": "GC-SHEATHING",
+      "source": "machines",
+      "quantity": 35827.4,
+      "avg_speed": 31.689097222222223,
+      "max_speed": 70.9,
+      "uptime_pct": 81.2,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Gemwell-Taping-Machine-2-Big-All-parallel-conductors-and-Hopper",
+      "category": "Gemwell-Taping",
+      "source": "machines",
+      "quantity": 30097.0,
+      "avg_speed": 20.915218902015287,
+      "max_speed": 55.0,
+      "uptime_pct": 57.7,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Heating-coil-auto-forming-machine",
+      "category": "Heating-coil",
+      "source": "machines",
+      "quantity": 16067.0,
+      "avg_speed": 19.173031026252982,
+      "max_speed": 37.0,
+      "uptime_pct": 56.1,
+      "readings": 838
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Inactive-2MeV",
+      "category": "Inactive",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 195
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Laying-Machine-\u2018A\u2019-(37-Bobbin)",
+      "category": "Laying-Machine",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 146
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Mantai-\u2013-TPL-M-91",
+      "category": "Mantai",
+      "source": "machines",
+      "quantity": 16163.6,
+      "avg_speed": 33.75010438413361,
+      "max_speed": 50.4,
+      "uptime_pct": 76.4,
+      "readings": 479
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Multi-Wire-drawing-machine-(8-wire)-101",
+      "category": "Multi-Wire",
+      "source": "machines",
+      "quantity": 214070.0,
+      "avg_speed": 1894.424778761062,
+      "max_speed": 5235.0,
+      "uptime_pct": 63.7,
+      "readings": 113
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Multi-Wire-drawing-machine-(8-wire)-103",
+      "category": "Multi-Wire",
+      "source": "machines",
+      "quantity": 217689.0,
+      "avg_speed": 1491.0205479452054,
+      "max_speed": 1646.0,
+      "uptime_pct": 93.2,
+      "readings": 146
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "PVC-Extruder-Supermac-Old",
+      "category": "PVC-Extruder",
+      "source": "machines",
+      "quantity": 51707.2,
+      "avg_speed": 35.96098748261474,
+      "max_speed": 76.5,
+      "uptime_pct": 76.1,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Pair-Twister-Machine",
+      "category": "Pair-Twister",
+      "source": "machines",
+      "quantity": 71166.3,
+      "avg_speed": 89.18082706766917,
+      "max_speed": 239.4,
+      "uptime_pct": 54.4,
+      "readings": 798
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-16-Braiding-11-NEW",
+      "category": "RC",
+      "source": "machines",
+      "quantity": 787.5,
+      "avg_speed": 0.550661099512874,
+      "max_speed": 5.3,
+      "uptime_pct": 23.0,
+      "readings": 1437
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-16-Braiding-9-NEW",
+      "category": "RC",
+      "source": "machines",
+      "quantity": 10061.0,
+      "avg_speed": 7.011149825783972,
+      "max_speed": 29.0,
+      "uptime_pct": 51.8,
+      "readings": 1435
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-16C-Braiding-8-Machines",
+      "category": "RC",
+      "source": "machines",
+      "quantity": 11959.0,
+      "avg_speed": 8.32799442896936,
+      "max_speed": 32.0,
+      "uptime_pct": 40.5,
+      "readings": 1436
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-24C-Braiding-B",
+      "category": "RC",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-24C-Braiding-C",
+      "category": "RC",
+      "source": "machines",
+      "quantity": 6700.7,
+      "avg_speed": 4.752941176470588,
+      "max_speed": 10.7,
+      "uptime_pct": 61.1,
+      "readings": 1411
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-EXTRUDER-35-50-TANDEM",
+      "category": "RC-EXTRUDER",
+      "source": "machines",
+      "quantity": 10165.0,
+      "avg_speed": 6.8320138888888895,
+      "max_speed": 24.0,
+      "uptime_pct": 42.6,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-EXTRUDER-50-65-2-TANDEM",
+      "category": "RC-EXTRUDER",
+      "source": "machines",
+      "quantity": 47514.3,
+      "avg_speed": 32.99173611111111,
+      "max_speed": 96.5,
+      "uptime_pct": 79.4,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-EXTRUDER-50-65-TANDEM-(GEMWELL)",
+      "category": "RC-EXTRUDER",
+      "source": "machines",
+      "quantity": 53495.4,
+      "avg_speed": 37.14416666666666,
+      "max_speed": 49.2,
+      "uptime_pct": 92.3,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-EXTRUDER-70A",
+      "category": "RC-EXTRUDER",
+      "source": "machines",
+      "quantity": 70513.0,
+      "avg_speed": 15.676580958999304,
+      "max_speed": 43.7,
+      "uptime_pct": 72.6,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-Extruder-70B",
+      "category": "RC-Extruder",
+      "source": "machines",
+      "quantity": 46844.5,
+      "avg_speed": 18.84408077994429,
+      "max_speed": 60.0,
+      "uptime_pct": 51.5,
+      "readings": 1436
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-LAYING-ST-4B-OLD",
+      "category": "RC-LAYING",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-LAYING-ST-8B-New",
+      "category": "RC-LAYING",
+      "source": "machines",
+      "quantity": 8981.2,
+      "avg_speed": 6.240097289784573,
+      "max_speed": 17.5,
+      "uptime_pct": 53.5,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-Laying-42-B",
+      "category": "RC-Laying",
+      "source": "machines",
+      "quantity": 1773.2,
+      "avg_speed": 1.2606534090909092,
+      "max_speed": 4.0,
+      "uptime_pct": 65.8,
+      "readings": 1408
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-Laying-4B-NEW",
+      "category": "RC-Laying",
+      "source": "machines",
+      "quantity": 1782.6,
+      "avg_speed": 1.239221140472879,
+      "max_speed": 1.3,
+      "uptime_pct": 95.4,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "RC-SHEATHING-80+100B",
+      "category": "RC-SHEATHING",
+      "source": "machines",
+      "quantity": 10446.3,
+      "avg_speed": 5.732892906815021,
+      "max_speed": 30.1,
+      "uptime_pct": 50.1,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TCL--JDM-ARMORING-96",
+      "category": "TCL",
+      "source": "machines",
+      "quantity": 2627.5,
+      "avg_speed": 1.8297353760445683,
+      "max_speed": 13.5,
+      "uptime_pct": 41.6,
+      "readings": 1436
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TCL-JDM-37-LAYING",
+      "category": "TCL-JDM",
+      "source": "machines",
+      "quantity": 3316.0,
+      "avg_speed": 2.305980528511822,
+      "max_speed": 30.5,
+      "uptime_pct": 52.1,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TCL-JDM-80mm-1-Extruder(OLD)",
+      "category": "TCL-JDM",
+      "source": "machines",
+      "quantity": 21870.7,
+      "avg_speed": 15.189722222222223,
+      "max_speed": 54.3,
+      "uptime_pct": 64.8,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TCL-JDM-ARMORING-48B",
+      "category": "TCL-JDM",
+      "source": "machines",
+      "quantity": 3311.5,
+      "avg_speed": 2.3028511821974966,
+      "max_speed": 19.5,
+      "uptime_pct": 33.0,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TCL-JDM-Extruder-80mm-2",
+      "category": "TCL-JDM",
+      "source": "machines",
+      "quantity": 22815.6,
+      "avg_speed": 15.844166666666666,
+      "max_speed": 45.4,
+      "uptime_pct": 66.7,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-198",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 1574.6,
+      "avg_speed": 1.0648611111111113,
+      "max_speed": 2.0,
+      "uptime_pct": 95.8,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-215",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 1420.7,
+      "avg_speed": 1.1725793327908869,
+      "max_speed": 1.7,
+      "uptime_pct": 98.8,
+      "readings": 1229
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-294",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 2090.3,
+      "avg_speed": 1.4841556636553164,
+      "max_speed": 2.2,
+      "uptime_pct": 96.5,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---Cold-lead-coiling-machine--TPL-M-134",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 318.3,
+      "avg_speed": 0.3552370452039691,
+      "max_speed": 0.8,
+      "uptime_pct": 53.7,
+      "readings": 907
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---FHMT-machine-(457&500mm-Width,110mm-Pitch)---TPL-M-232",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 1582.4,
+      "avg_speed": 1.1032684283727399,
+      "max_speed": 5.1,
+      "uptime_pct": 30.8,
+      "readings": 1438
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---FHMT-machine-(457&500mm-Width,80mm-Pitch)---TPL-M-84",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---FHMT-machine-(500mm-Width,80mm-Pitch)---TPL-M-109",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 6893.0,
+      "avg_speed": 4.790132036136206,
+      "max_speed": 21.0,
+      "uptime_pct": 30.3,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-1---FHMT-machine-(500mm-Width,80mm-Pitch)---TPL-M-98",
+      "category": "TPL",
+      "source": "machines",
+      "quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 1439
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-Unit-3-EBeam-2MeV-New",
+      "category": "TPL-Unit",
+      "source": "machines",
+      "quantity": 197482.4,
+      "avg_speed": 154.76873040752352,
+      "max_speed": 287.6,
+      "uptime_pct": 96.2,
+      "readings": 1276
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "TPL-Unit-3-EBeam-3-MeV-Old",
+      "category": "TPL-Unit",
+      "source": "machines",
+      "quantity": 10063.4,
+      "avg_speed": 6.988472222222222,
+      "max_speed": 40.3,
+      "uptime_pct": 35.6,
+      "readings": 1440
+    },
+    {
+      "date": "2026-05-30",
+      "machine": "Taping-Cum-Pairing-Machine-\u2018A\u2019",
+      "category": "Taping-Cum",
+      "source": "machines",
+      "quantity": 30815.1,
+      "avg_speed": 21.400694444444444,
+      "max_speed": 189.1,
+      "uptime_pct": 19.9,
+      "readings": 1440
+    },
     {
       "date": "2026-05-31",
       "machine": "150MM-Extruder-\u2018A\u2019",
@@ -1609,15 +2467,24 @@
   ],
   "daily_production": [
     {
+      "date": "2026-05-30",
+      "total_qty": 3826229.4
+    },
+    {
       "date": "2026-05-31",
       "total_qty": 6080385.3
     },
     {
       "date": "2026-06-01",
-      "total_qty": 5872934.399999999
+      "total_qty": 5872934.4
     }
   ],
   "daily_uptime": [
+    {
+      "date": "2026-05-30",
+      "uptime_pct": 49.1,
+      "avg_speed": 34.79
+    },
     {
       "date": "2026-05-31",
       "uptime_pct": 52.1,
@@ -1633,98 +2500,114 @@
     {
       "machine": "Electro-Tin-Plating-New",
       "total_quantity": 2301816.0,
-      "avg_speed": 1579.8908375089477,
+      "avg_speed": 1576.6839607719076,
       "max_speed": 2123.0,
-      "uptime_pct": 92.6,
-      "readings": 2794
+      "uptime_pct": 92.0,
+      "readings": 3161
     },
     {
       "machine": "1900-10",
       "total_quantity": 1470361.0,
-      "avg_speed": 1166.0043082814743,
+      "avg_speed": 1029.3174002751032,
       "max_speed": 2563.0,
-      "uptime_pct": 81.0,
-      "readings": 2089
+      "uptime_pct": 75.5,
+      "readings": 2908
     },
     {
       "machine": "Multi-Wire-drawing-machine-(8-wire)-101",
       "total_quantity": 1390385.0,
-      "avg_speed": 2896.6354166666665,
+      "avg_speed": 2705.657672849916,
       "max_speed": 5241.0,
-      "uptime_pct": 66.0,
-      "readings": 480
+      "uptime_pct": 65.6,
+      "readings": 593
+    },
+    {
+      "machine": "GC-EXTRUDER-70E",
+      "total_quantity": 521386.7,
+      "avg_speed": 11.630609212481426,
+      "max_speed": 103.1,
+      "uptime_pct": 44.7,
+      "readings": 4038
     },
     {
       "machine": "70-MM-F",
       "total_quantity": 314299.0,
-      "avg_speed": 178.62856150104238,
+      "avg_speed": 148.54701250578972,
       "max_speed": 469.0,
-      "uptime_pct": 59.9,
-      "readings": 2878
+      "uptime_pct": 49.6,
+      "readings": 4318
     },
     {
-      "machine": "GC-EXTRUDER-70E",
-      "total_quantity": 312061.2,
-      "avg_speed": 10.208096699923253,
-      "max_speed": 103.1,
-      "uptime_pct": 40.6,
-      "readings": 2606
+      "machine": "Multi-Wire-drawing-machine-(8-wire)-103",
+      "total_quantity": 217689.0,
+      "avg_speed": 1480.8775510204082,
+      "max_speed": 1646.0,
+      "uptime_pct": 92.5,
+      "readings": 147
+    },
+    {
+      "machine": "Fluoro-Polymer-Extruder-Old-Rosendahl",
+      "total_quantity": 210417.6,
+      "avg_speed": 103.82540125610606,
+      "max_speed": 293.5,
+      "uptime_pct": 84.8,
+      "readings": 2866
     },
     {
       "machine": "TPL-Unit-3-EBeam-2MeV-New",
       "total_quantity": 201526.2,
-      "avg_speed": 83.93370396108409,
-      "max_speed": 275.5,
-      "uptime_pct": 82.8,
-      "readings": 2878
+      "avg_speed": 105.69236880115551,
+      "max_speed": 287.6,
+      "uptime_pct": 87.0,
+      "readings": 4154
     },
     {
       "machine": "150MM-Extruder-\u2018A\u2019",
       "total_quantity": 174544.0,
-      "avg_speed": 97.88300835654596,
+      "avg_speed": 93.07252109704642,
       "max_speed": 364.0,
-      "uptime_pct": 64.5,
-      "readings": 2872
+      "uptime_pct": 60.6,
+      "readings": 3792
+    },
+    {
+      "machine": "FP-Extruder-New-ROSENDAHL",
+      "total_quantity": 130769.4,
+      "avg_speed": 88.72139522821577,
+      "max_speed": 151.6,
+      "uptime_pct": 83.9,
+      "readings": 3856
     },
     {
       "machine": "60MM-PVC-EXTRUDER,-SUPERMAC",
       "total_quantity": 124619.6,
-      "avg_speed": 74.87636426833507,
+      "avg_speed": 67.78091267083623,
       "max_speed": 390.6,
-      "uptime_pct": 53.2,
-      "readings": 2877
+      "uptime_pct": 55.1,
+      "readings": 4317
     },
     {
       "machine": "GC-EXTRUDER-70D",
       "total_quantity": 124058.6,
-      "avg_speed": 61.23190823774766,
-      "max_speed": 233.7,
-      "uptime_pct": 45.7,
-      "readings": 2877
-    },
-    {
-      "machine": "FP-Extruder-New-ROSENDAHL",
-      "total_quantity": 123139.9,
-      "avg_speed": 87.30086741016109,
-      "max_speed": 151.6,
-      "uptime_pct": 82.9,
-      "readings": 2421
+      "avg_speed": 53.24753300903405,
+      "max_speed": 248.9,
+      "uptime_pct": 45.4,
+      "readings": 4317
     },
     {
       "machine": "Pair-Twister-Machine",
       "total_quantity": 109659.6,
-      "avg_speed": 119.80813718897109,
-      "max_speed": 213.0,
-      "uptime_pct": 76.6,
-      "readings": 1487
+      "avg_speed": 109.11203501094091,
+      "max_speed": 239.4,
+      "uptime_pct": 68.8,
+      "readings": 2285
     },
     {
       "machine": "GC-EXTRUDER-70C",
       "total_quantity": 104092.8,
-      "avg_speed": 71.88026407227241,
+      "avg_speed": 56.58154238073182,
       "max_speed": 248.1,
-      "uptime_pct": 56.6,
-      "readings": 2878
+      "uptime_pct": 48.8,
+      "readings": 4318
     },
     {
       "machine": "GC-EXTRUDER-70A",
@@ -1735,132 +2618,132 @@
       "readings": 2879
     },
     {
-      "machine": "Fluoro-Polymer-Extruder-Old-Rosendahl",
-      "total_quantity": 87154.6,
-      "avg_speed": 61.07175893482831,
-      "max_speed": 111.4,
-      "uptime_pct": 81.7,
-      "readings": 1427
-    },
-    {
       "machine": "GC-EXTRUDER-70B",
       "total_quantity": 74408.9,
-      "avg_speed": 26.152084781097983,
+      "avg_speed": 27.034298286243633,
       "max_speed": 133.9,
-      "uptime_pct": 33.0,
-      "readings": 2878
+      "uptime_pct": 36.2,
+      "readings": 4318
     },
     {
       "machine": "RC-EXTRUDER-70A",
-      "total_quantity": 61307.0,
-      "avg_speed": 12.466898470097359,
-      "max_speed": 28.9,
-      "uptime_pct": 68.4,
-      "readings": 2876
+      "total_quantity": 70513.0,
+      "avg_speed": 13.53728852838934,
+      "max_speed": 43.7,
+      "uptime_pct": 69.8,
+      "readings": 4315
+    },
+    {
+      "machine": "RC-EXTRUDER-50-65-TANDEM-(GEMWELL)",
+      "total_quantity": 53495.4,
+      "avg_speed": 25.39258916164891,
+      "max_speed": 51.1,
+      "uptime_pct": 69.2,
+      "readings": 4318
+    },
+    {
+      "machine": "PVC-Extruder-Supermac-Old",
+      "total_quantity": 51707.2,
+      "avg_speed": 29.84433497536946,
+      "max_speed": 76.5,
+      "uptime_pct": 74.7,
+      "readings": 3857
     },
     {
       "machine": "RC-Extruder-70B",
       "total_quantity": 50412.5,
-      "avg_speed": 15.178186870441126,
+      "avg_speed": 16.39816917728853,
       "max_speed": 70.0,
-      "uptime_pct": 39.9,
-      "readings": 2879
+      "uptime_pct": 43.8,
+      "readings": 4315
+    },
+    {
+      "machine": "RC-EXTRUDER-50-65-2-TANDEM",
+      "total_quantity": 47514.3,
+      "avg_speed": 16.127641334569045,
+      "max_speed": 96.5,
+      "uptime_pct": 43.7,
+      "readings": 4316
     },
     {
       "machine": "GC-SHEATHING-SECTION-80-100-New-Dummy-data",
       "total_quantity": 38055.2,
-      "avg_speed": 23.998191933240612,
-      "max_speed": 64.7,
-      "uptime_pct": 74.7,
-      "readings": 2876
+      "avg_speed": 26.56420296570899,
+      "max_speed": 70.9,
+      "uptime_pct": 76.9,
+      "readings": 4316
     },
     {
-      "machine": "PVC-Extruder-Supermac-Old",
-      "total_quantity": 36724.8,
-      "avg_speed": 26.208226539892518,
-      "max_speed": 45.4,
-      "uptime_pct": 73.8,
-      "readings": 2419
-    },
-    {
-      "machine": "RC-EXTRUDER-50-65-TANDEM-(GEMWELL)",
-      "total_quantity": 36081.1,
-      "avg_speed": 19.512717164697705,
-      "max_speed": 51.1,
-      "uptime_pct": 57.6,
-      "readings": 2878
+      "machine": "25mm+30mm-Fluoropolymer-Extrusion-Line,GEMWELL",
+      "total_quantity": 36109.4,
+      "avg_speed": 25.96974539544962,
+      "max_speed": 45.5,
+      "uptime_pct": 79.6,
+      "readings": 3692
     },
     {
       "machine": "Gemwell-Taping-Machine-2-Big-All-parallel-conductors-and-Hopper",
       "total_quantity": 33969.0,
-      "avg_speed": 23.871398453970485,
+      "avg_speed": 22.38504542278127,
       "max_speed": 55.0,
-      "uptime_pct": 61.8,
-      "readings": 1423
+      "uptime_pct": 59.7,
+      "readings": 2862
     },
     {
-      "machine": "25mm+30mm-Fluoropolymer-Extrusion-Line,GEMWELL",
-      "total_quantity": 30258.9,
-      "avg_speed": 26.048235294117646,
-      "max_speed": 45.5,
-      "uptime_pct": 67.9,
-      "readings": 2295
+      "machine": "GC-SHEATHING-80B",
+      "total_quantity": 33453.5,
+      "avg_speed": 16.515609078276977,
+      "max_speed": 91.8,
+      "uptime_pct": 46.4,
+      "readings": 4318
+    },
+    {
+      "machine": "Taping-Cum-Pairing-Machine-\u2018A\u2019",
+      "total_quantity": 30815.1,
+      "avg_speed": 21.400694444444444,
+      "max_speed": 189.1,
+      "uptime_pct": 19.9,
+      "readings": 1440
     },
     {
       "machine": "TPL-Unit-3-EBeam-3-MeV-Old",
       "total_quantity": 28211.3,
-      "avg_speed": 18.49190410006949,
+      "avg_speed": 14.655650764242704,
       "max_speed": 56.1,
-      "uptime_pct": 68.5,
-      "readings": 2878
+      "uptime_pct": 57.5,
+      "readings": 4318
     },
     {
       "machine": "TCL-JDM-Extruder-80mm-2",
       "total_quantity": 25621.2,
-      "avg_speed": 12.881410701876302,
+      "avg_speed": 13.869453450671609,
       "max_speed": 47.1,
-      "uptime_pct": 49.3,
-      "readings": 2878
+      "uptime_pct": 55.1,
+      "readings": 4318
     },
     {
-      "machine": "RC-EXTRUDER-50-65-2-TANDEM",
-      "total_quantity": 22099.4,
-      "avg_speed": 7.683866481223922,
-      "max_speed": 63.6,
-      "uptime_pct": 25.9,
-      "readings": 2876
+      "machine": "TCL-JDM-80mm-1-Extruder(OLD)",
+      "total_quantity": 21870.7,
+      "avg_speed": 10.30583873957368,
+      "max_speed": 54.3,
+      "uptime_pct": 45.1,
+      "readings": 4316
     },
     {
       "machine": "GC-SHEATHING-80A",
       "total_quantity": 21866.2,
-      "avg_speed": 12.446110325318246,
+      "avg_speed": 12.647639282341832,
       "max_speed": 40.6,
-      "uptime_pct": 71.0,
-      "readings": 2828
-    },
-    {
-      "machine": "TCL-JDM-80mm-1-Extruder(OLD)",
-      "total_quantity": 21445.5,
-      "avg_speed": 7.860500695410292,
-      "max_speed": 49.1,
-      "uptime_pct": 35.3,
-      "readings": 2876
+      "uptime_pct": 78.4,
+      "readings": 4236
     },
     {
       "machine": "RC-EXTRUDER-35-50-TANDEM",
       "total_quantity": 21231.0,
-      "avg_speed": 10.211223071577486,
+      "avg_speed": 9.084298286243632,
       "max_speed": 30.0,
-      "uptime_pct": 47.1,
-      "readings": 2878
-    },
-    {
-      "machine": "GC-SHEATHING-80B",
-      "total_quantity": 20986.3,
-      "avg_speed": 13.156706045865183,
-      "max_speed": 79.2,
-      "uptime_pct": 44.5,
-      "readings": 2878
+      "uptime_pct": 45.6,
+      "readings": 4318
     },
     {
       "machine": "GC---SHEATHING-100MM-OLD",
@@ -1871,12 +2754,28 @@
       "readings": 2878
     },
     {
+      "machine": "Mantai-\u2013-TPL-M-91",
+      "total_quantity": 16163.6,
+      "avg_speed": 26.795926285160036,
+      "max_speed": 52.4,
+      "uptime_pct": 69.2,
+      "readings": 1031
+    },
+    {
       "machine": "RC-16C-Braiding-8-Machines",
       "total_quantity": 16149.0,
-      "avg_speed": 8.546907574704656,
-      "max_speed": 27.0,
-      "uptime_pct": 44.7,
-      "readings": 2878
+      "avg_speed": 8.474038015762634,
+      "max_speed": 32.0,
+      "uptime_pct": 43.3,
+      "readings": 4314
+    },
+    {
+      "machine": "Heating-coil-auto-forming-machine",
+      "total_quantity": 16067.0,
+      "avg_speed": 19.780318091451292,
+      "max_speed": 37.0,
+      "uptime_pct": 58.1,
+      "readings": 1006
     },
     {
       "machine": "RC-24C-Braiding-A",
@@ -1889,50 +2788,74 @@
     {
       "machine": "Inactive-2MeV",
       "total_quantity": 13923.5,
-      "avg_speed": 4.968737788198515,
+      "avg_speed": 4.786373047242613,
       "max_speed": 29.5,
-      "uptime_pct": 34.8,
-      "readings": 5118
+      "uptime_pct": 33.5,
+      "readings": 5313
     },
     {
       "machine": "GC-LAYING-ST-8B-New",
       "total_quantity": 13522.3,
-      "avg_speed": 8.582962447844228,
+      "avg_speed": 8.781835032437442,
       "max_speed": 27.1,
-      "uptime_pct": 48.9,
-      "readings": 2876
+      "uptime_pct": 52.8,
+      "readings": 4316
+    },
+    {
+      "machine": "100-mm-old",
+      "total_quantity": 13190.7,
+      "avg_speed": 9.174687065368568,
+      "max_speed": 18.4,
+      "uptime_pct": 85.1,
+      "readings": 1438
     },
     {
       "machine": "GC-ARMORING-72B-Poineer-New",
       "total_quantity": 12517.0,
-      "avg_speed": 5.872088981578033,
+      "avg_speed": 5.901552003706278,
       "max_speed": 24.0,
-      "uptime_pct": 39.8,
-      "readings": 2877
+      "uptime_pct": 41.0,
+      "readings": 4317
     },
     {
       "machine": "1900-1",
       "total_quantity": 11952.0,
-      "avg_speed": 15.44186046511628,
+      "avg_speed": 15.421935483870968,
       "max_speed": 161.0,
-      "uptime_pct": 20.2,
-      "readings": 774
-    },
-    {
-      "machine": "Mantai-\u2013-TPL-M-91",
-      "total_quantity": 11448.8,
-      "avg_speed": 20.761413043478264,
-      "max_speed": 52.4,
-      "uptime_pct": 62.9,
-      "readings": 552
+      "uptime_pct": 20.1,
+      "readings": 775
     },
     {
       "machine": "GC-SHEATHING-80D",
-      "total_quantity": 10388.2,
-      "avg_speed": 13.186279958318861,
+      "total_quantity": 11120.7,
+      "avg_speed": 12.704377026401112,
       "max_speed": 88.2,
-      "uptime_pct": 79.0,
-      "readings": 2879
+      "uptime_pct": 79.7,
+      "readings": 4318
+    },
+    {
+      "machine": "1900-8",
+      "total_quantity": 10459.2,
+      "avg_speed": 7.2468055555555555,
+      "max_speed": 11.6,
+      "uptime_pct": 80.6,
+      "readings": 1440
+    },
+    {
+      "machine": "RC-SHEATHING-80+100B",
+      "total_quantity": 10446.3,
+      "avg_speed": 5.4636932344763665,
+      "max_speed": 32.5,
+      "uptime_pct": 45.5,
+      "readings": 4316
+    },
+    {
+      "machine": "RC-16-Braiding-9-NEW",
+      "total_quantity": 10061.0,
+      "avg_speed": 4.644471594379963,
+      "max_speed": 31.0,
+      "uptime_pct": 38.5,
+      "readings": 3274
     },
     {
       "machine": "RC-SHEATHING-80-100A",
@@ -1943,132 +2866,148 @@
       "readings": 2876
     },
     {
-      "machine": "RC-SHEATHING-80+100B",
-      "total_quantity": 8278.5,
-      "avg_speed": 5.329186935371786,
-      "max_speed": 32.5,
-      "uptime_pct": 43.1,
-      "readings": 2878
+      "machine": "GC-SHEATHING-100MM-OLD",
+      "total_quantity": 9747.5,
+      "avg_speed": 6.769027777777778,
+      "max_speed": 17.2,
+      "uptime_pct": 53.6,
+      "readings": 1440
+    },
+    {
+      "machine": "RC-LAYING-ST-8B-New",
+      "total_quantity": 8981.2,
+      "avg_speed": 5.4742294322132095,
+      "max_speed": 18.0,
+      "uptime_pct": 50.8,
+      "readings": 4315
+    },
+    {
+      "machine": "E-Beam-2Mev",
+      "total_quantity": 7916.0,
+      "avg_speed": 69.43859649122807,
+      "max_speed": 140.0,
+      "uptime_pct": 59.6,
+      "readings": 114
     },
     {
       "machine": "TPL-1---FHMT-machine-(500mm-Width,80mm-Pitch)---TPL-M-98",
       "total_quantity": 7676.0,
-      "avg_speed": 2.6689847009735743,
+      "avg_speed": 1.7789107763615295,
       "max_speed": 21.0,
-      "uptime_pct": 15.0,
-      "readings": 2876
-    },
-    {
-      "machine": "RC-LAYING-ST-8B-New",
-      "total_quantity": 7539.6,
-      "avg_speed": 5.091029207232267,
-      "max_speed": 18.0,
-      "uptime_pct": 49.4,
-      "readings": 2876
+      "uptime_pct": 10.0,
+      "readings": 4315
     },
     {
       "machine": "Laying-Machine-\u2018A\u2019-(37-Bobbin)",
       "total_quantity": 7379.0,
-      "avg_speed": 3.5862430167597767,
+      "avg_speed": 3.412292358803987,
       "max_speed": 18.0,
-      "uptime_pct": 32.8,
-      "readings": 2864
+      "uptime_pct": 31.2,
+      "readings": 3010
+    },
+    {
+      "machine": "GC-Armouring-48C",
+      "total_quantity": 6988.4,
+      "avg_speed": 3.004610750695088,
+      "max_speed": 13.2,
+      "uptime_pct": 34.8,
+      "readings": 4316
+    },
+    {
+      "machine": "TPL-1---FHMT-machine-(500mm-Width,80mm-Pitch)---TPL-M-109",
+      "total_quantity": 6893.0,
+      "avg_speed": 2.0363762743280818,
+      "max_speed": 21.0,
+      "uptime_pct": 13.3,
+      "readings": 4316
+    },
+    {
+      "machine": "RC-24C-Braiding-C",
+      "total_quantity": 6700.7,
+      "avg_speed": 3.129780833691448,
+      "max_speed": 10.7,
+      "uptime_pct": 50.1,
+      "readings": 2327
     },
     {
       "machine": "Drum-Twister-\u2018A\u2019",
       "total_quantity": 6189.0,
-      "avg_speed": 2.918381583536798,
+      "avg_speed": 3.266964755391899,
       "max_speed": 21.0,
-      "uptime_pct": 36.5,
-      "readings": 2867
+      "uptime_pct": 38.0,
+      "readings": 3802
     },
     {
       "machine": "TCL-JDM-37-LAYING",
       "total_quantity": 5595.0,
-      "avg_speed": 3.1927361853832443,
-      "max_speed": 23.5,
-      "uptime_pct": 45.2,
-      "readings": 2244
-    },
-    {
-      "machine": "RC-16-Braiding-9-NEW",
-      "total_quantity": 5143.0,
-      "avg_speed": 2.797716150081566,
-      "max_speed": 31.0,
-      "uptime_pct": 28.1,
-      "readings": 1839
+      "avg_speed": 2.8464149918522543,
+      "max_speed": 30.5,
+      "uptime_pct": 47.9,
+      "readings": 3682
     },
     {
       "machine": "TCL--JDM-ARMORING-96",
       "total_quantity": 4799.0,
-      "avg_speed": 2.469707520891365,
-      "max_speed": 11.5,
-      "uptime_pct": 36.5,
-      "readings": 2872
+      "avg_speed": 2.2563834726090994,
+      "max_speed": 13.5,
+      "uptime_pct": 38.2,
+      "readings": 4308
     },
     {
-      "machine": "GC-Armouring-48C",
-      "total_quantity": 4207.4,
-      "avg_speed": 2.078136948209941,
-      "max_speed": 13.2,
-      "uptime_pct": 24.6,
-      "readings": 2877
+      "machine": "GC-ARMORING-72B-OLD",
+      "total_quantity": 4686.7,
+      "avg_speed": 2.7582387022016226,
+      "max_speed": 29.7,
+      "uptime_pct": 22.5,
+      "readings": 4315
     },
     {
       "machine": "GC-Laying-37B-NEW",
       "total_quantity": 3954.7,
-      "avg_speed": 2.405458970792768,
+      "avg_speed": 2.3551796060254926,
       "max_speed": 15.7,
-      "uptime_pct": 28.8,
-      "readings": 2876
+      "uptime_pct": 28.6,
+      "readings": 4315
     },
     {
-      "machine": "Heating-coil-auto-forming-machine",
-      "total_quantity": 3832.0,
-      "avg_speed": 22.80952380952381,
-      "max_speed": 37.0,
-      "uptime_pct": 67.9,
-      "readings": 168
-    },
-    {
-      "machine": "GC-ARMORING-72B-OLD",
-      "total_quantity": 3615.5,
-      "avg_speed": 2.507959680222454,
-      "max_speed": 29.7,
-      "uptime_pct": 20.9,
-      "readings": 2877
+      "machine": "GC-Armouring-30B",
+      "total_quantity": 3584.3,
+      "avg_speed": 1.2901552003706278,
+      "max_speed": 19.5,
+      "uptime_pct": 20.5,
+      "readings": 4317
     },
     {
       "machine": "TCL-JDM-ARMORING-48B",
-      "total_quantity": 3063.5,
-      "avg_speed": 2.110376044568245,
+      "total_quantity": 3311.5,
+      "avg_speed": 2.1745939675174015,
       "max_speed": 20.0,
-      "uptime_pct": 18.9,
-      "readings": 2872
+      "uptime_pct": 23.6,
+      "readings": 4310
+    },
+    {
+      "machine": "Extruder-Machine-70-mm-A",
+      "total_quantity": 2600.0,
+      "avg_speed": 22.033898305084747,
+      "max_speed": 138.0,
+      "uptime_pct": 33.9,
+      "readings": 118
     },
     {
       "machine": "RC-Laying-42-B",
       "total_quantity": 2335.7,
-      "avg_speed": 1.586692147324531,
-      "max_speed": 3.0,
-      "uptime_pct": 95.7,
-      "readings": 2878
+      "avg_speed": 1.4795846943537097,
+      "max_speed": 4.0,
+      "uptime_pct": 85.9,
+      "readings": 4286
     },
     {
-      "machine": "GC-Armouring-30B",
-      "total_quantity": 1978.8,
-      "avg_speed": 0.6888464211257818,
-      "max_speed": 10.1,
-      "uptime_pct": 14.2,
-      "readings": 2878
-    },
-    {
-      "machine": "TPL-1---FHMT-machine-(500mm-Width,80mm-Pitch)---TPL-M-109",
-      "total_quantity": 1896.0,
-      "avg_speed": 0.6590198123044838,
-      "max_speed": 19.0,
-      "uptime_pct": 4.7,
-      "readings": 2877
+      "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-294",
+      "total_quantity": 2090.3,
+      "avg_speed": 1.0831400742115027,
+      "max_speed": 2.2,
+      "uptime_pct": 81.1,
+      "readings": 4312
     },
     {
       "machine": "GC-Pairing-11H",
@@ -2076,63 +3015,55 @@
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 2879
+      "readings": 4318
     },
     {
       "machine": "RC-Laying-4B-NEW",
       "total_quantity": 1785.3,
-      "avg_speed": 1.2018068102849202,
+      "avg_speed": 1.2142724745134383,
       "max_speed": 1.3,
-      "uptime_pct": 92.7,
-      "readings": 2878
+      "uptime_pct": 93.6,
+      "readings": 4316
     },
     {
       "machine": "TPL-1---FHMT-machine-(457&500mm-Width,110mm-Pitch)---TPL-M-232",
       "total_quantity": 1743.2,
-      "avg_speed": 0.6089198606271776,
+      "avg_speed": 0.7739322191272052,
       "max_speed": 5.4,
-      "uptime_pct": 16.0,
-      "readings": 2870
-    },
-    {
-      "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-294",
-      "total_quantity": 1647.9,
-      "avg_speed": 0.8822833275321964,
-      "max_speed": 2.2,
-      "uptime_pct": 73.4,
-      "readings": 2873
+      "uptime_pct": 21.0,
+      "readings": 4308
     },
     {
       "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-198",
-      "total_quantity": 1527.7,
-      "avg_speed": 0.7627260083449234,
+      "total_quantity": 1574.6,
+      "avg_speed": 0.8635310472659871,
       "max_speed": 2.5,
-      "uptime_pct": 67.5,
-      "readings": 2876
+      "uptime_pct": 77.0,
+      "readings": 4316
     },
     {
       "machine": "TPL-1---Cold-lead-coiling-machine---TPL-M-215",
-      "total_quantity": 1416.1,
-      "avg_speed": 0.8124818577648766,
+      "total_quantity": 1420.7,
+      "avg_speed": 0.9235382685069008,
       "max_speed": 1.7,
-      "uptime_pct": 68.7,
-      "readings": 2756
+      "uptime_pct": 78.0,
+      "readings": 3985
     },
     {
       "machine": "RC-16-Braiding-11-NEW",
       "total_quantity": 1142.7,
-      "avg_speed": 0.6051237364935518,
-      "max_speed": 4.0,
-      "uptime_pct": 27.6,
-      "readings": 2869
+      "avg_speed": 0.5869484440315839,
+      "max_speed": 5.3,
+      "uptime_pct": 26.1,
+      "readings": 4306
     },
     {
       "machine": "54-Stranding-Machine-A",
       "total_quantity": 1138.0,
-      "avg_speed": 3.5015384615384617,
+      "avg_speed": 3.2358490566037736,
       "max_speed": 15.0,
-      "uptime_pct": 45.2,
-      "readings": 325
+      "uptime_pct": 42.2,
+      "readings": 424
     },
     {
       "machine": "PTFE-TAPING-MACHINE---TPL-M-258",
@@ -2145,58 +3076,42 @@
     {
       "machine": "GC---12-BRAIDING---E",
       "total_quantity": 992.3,
-      "avg_speed": 0.6248403122782115,
+      "avg_speed": 0.41362461827578106,
       "max_speed": 29.2,
-      "uptime_pct": 37.8,
-      "readings": 2818
+      "uptime_pct": 25.0,
+      "readings": 4257
     },
     {
       "machine": "TPL-1---Cold-lead-coiling-machine--TPL-M-134",
       "total_quantity": 945.1,
-      "avg_speed": 0.5900908340214699,
+      "avg_speed": 0.5261039351156503,
       "max_speed": 0.8,
-      "uptime_pct": 88.8,
-      "readings": 2422
+      "uptime_pct": 79.2,
+      "readings": 3329
     },
     {
       "machine": "GC-12-BRAIDING---G",
       "total_quantity": 511.7,
-      "avg_speed": 0.3390201528839472,
+      "avg_speed": 0.22606580166821133,
       "max_speed": 1.2,
-      "uptime_pct": 42.5,
-      "readings": 2878
-    },
-    {
-      "machine": "RC-24C-Braiding-C",
-      "total_quantity": 423.4,
-      "avg_speed": 0.6294759825327512,
-      "max_speed": 4.0,
-      "uptime_pct": 33.1,
-      "readings": 916
+      "uptime_pct": 28.4,
+      "readings": 4316
     },
     {
       "machine": "GC-24C-Braiding-C",
       "total_quantity": 45.6,
-      "avg_speed": 0.01978354978354978,
+      "avg_speed": 0.012341344855522548,
       "max_speed": 2.2,
-      "uptime_pct": 1.0,
-      "readings": 2310
+      "uptime_pct": 0.6,
+      "readings": 3703
     },
     {
       "machine": "1900-7",
       "total_quantity": 2.0,
-      "avg_speed": 0.0006949270326615705,
+      "avg_speed": 0.0004677268475210477,
       "max_speed": 2.0,
       "uptime_pct": 0.0,
-      "readings": 2878
-    },
-    {
-      "machine": "GC-LAYING-19B-2-Tab-device",
-      "total_quantity": 0.0,
-      "avg_speed": 0.0,
-      "max_speed": 0.0,
-      "uptime_pct": 0.0,
-      "readings": 2795
+      "readings": 4276
     },
     {
       "machine": "GC-SHEATHING-80C",
@@ -2204,23 +3119,23 @@
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 2878
+      "readings": 4317
     },
     {
-      "machine": "RC-LAYING-ST-4B-OLD",
+      "machine": "1900-9",
       "total_quantity": 0.0,
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 2879
+      "readings": 154
     },
     {
-      "machine": "TPL-1---FHMT-machine-(457&500mm-Width,80mm-Pitch)---TPL-M-84",
+      "machine": "RC-24C-Braiding-B",
       "total_quantity": 0.0,
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 2876
+      "readings": 4304
     },
     {
       "machine": "1900-4",
@@ -2231,172 +3146,180 @@
       "readings": 166
     },
     {
-      "machine": "Multi-Wire-drawing-machine-(8-wire)-103",
+      "machine": "RC-LAYING-ST-4B-OLD",
       "total_quantity": 0.0,
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 1
+      "readings": 4318
     },
     {
-      "machine": "RC-24C-Braiding-B",
+      "machine": "TPL-1---FHMT-machine-(457&500mm-Width,80mm-Pitch)---TPL-M-84",
       "total_quantity": 0.0,
       "avg_speed": 0.0,
       "max_speed": 0.0,
       "uptime_pct": 0.0,
-      "readings": 2864
+      "readings": 4315
+    },
+    {
+      "machine": "GC-LAYING-19B-2-Tab-device",
+      "total_quantity": 0.0,
+      "avg_speed": 0.0,
+      "max_speed": 0.0,
+      "uptime_pct": 0.0,
+      "readings": 3911
     }
   ],
   "top_machines": [
     {
       "machine": "Electro-Tin-Plating-New",
       "total_quantity": 2301816.0,
-      "avg_speed": 1579.8908375089477,
+      "avg_speed": 1576.6839607719076,
       "max_speed": 2123.0,
-      "uptime_pct": 92.6,
-      "readings": 2794
+      "uptime_pct": 92.0,
+      "readings": 3161
     },
     {
       "machine": "1900-10",
       "total_quantity": 1470361.0,
-      "avg_speed": 1166.0043082814743,
+      "avg_speed": 1029.3174002751032,
       "max_speed": 2563.0,
-      "uptime_pct": 81.0,
-      "readings": 2089
+      "uptime_pct": 75.5,
+      "readings": 2908
     },
     {
       "machine": "Multi-Wire-drawing-machine-(8-wire)-101",
       "total_quantity": 1390385.0,
-      "avg_speed": 2896.6354166666665,
+      "avg_speed": 2705.657672849916,
       "max_speed": 5241.0,
-      "uptime_pct": 66.0,
-      "readings": 480
+      "uptime_pct": 65.6,
+      "readings": 593
+    },
+    {
+      "machine": "GC-EXTRUDER-70E",
+      "total_quantity": 521386.7,
+      "avg_speed": 11.630609212481426,
+      "max_speed": 103.1,
+      "uptime_pct": 44.7,
+      "readings": 4038
     },
     {
       "machine": "70-MM-F",
       "total_quantity": 314299.0,
-      "avg_speed": 178.62856150104238,
+      "avg_speed": 148.54701250578972,
       "max_speed": 469.0,
-      "uptime_pct": 59.9,
-      "readings": 2878
+      "uptime_pct": 49.6,
+      "readings": 4318
     },
     {
-      "machine": "GC-EXTRUDER-70E",
-      "total_quantity": 312061.2,
-      "avg_speed": 10.208096699923253,
-      "max_speed": 103.1,
-      "uptime_pct": 40.6,
-      "readings": 2606
+      "machine": "Multi-Wire-drawing-machine-(8-wire)-103",
+      "total_quantity": 217689.0,
+      "avg_speed": 1480.8775510204082,
+      "max_speed": 1646.0,
+      "uptime_pct": 92.5,
+      "readings": 147
+    },
+    {
+      "machine": "Fluoro-Polymer-Extruder-Old-Rosendahl",
+      "total_quantity": 210417.6,
+      "avg_speed": 103.82540125610606,
+      "max_speed": 293.5,
+      "uptime_pct": 84.8,
+      "readings": 2866
     },
     {
       "machine": "TPL-Unit-3-EBeam-2MeV-New",
       "total_quantity": 201526.2,
-      "avg_speed": 83.93370396108409,
-      "max_speed": 275.5,
-      "uptime_pct": 82.8,
-      "readings": 2878
+      "avg_speed": 105.69236880115551,
+      "max_speed": 287.6,
+      "uptime_pct": 87.0,
+      "readings": 4154
     },
     {
       "machine": "150MM-Extruder-\u2018A\u2019",
       "total_quantity": 174544.0,
-      "avg_speed": 97.88300835654596,
+      "avg_speed": 93.07252109704642,
       "max_speed": 364.0,
-      "uptime_pct": 64.5,
-      "readings": 2872
-    },
-    {
-      "machine": "60MM-PVC-EXTRUDER,-SUPERMAC",
-      "total_quantity": 124619.6,
-      "avg_speed": 74.87636426833507,
-      "max_speed": 390.6,
-      "uptime_pct": 53.2,
-      "readings": 2877
-    },
-    {
-      "machine": "GC-EXTRUDER-70D",
-      "total_quantity": 124058.6,
-      "avg_speed": 61.23190823774766,
-      "max_speed": 233.7,
-      "uptime_pct": 45.7,
-      "readings": 2877
+      "uptime_pct": 60.6,
+      "readings": 3792
     },
     {
       "machine": "FP-Extruder-New-ROSENDAHL",
-      "total_quantity": 123139.9,
-      "avg_speed": 87.30086741016109,
+      "total_quantity": 130769.4,
+      "avg_speed": 88.72139522821577,
       "max_speed": 151.6,
-      "uptime_pct": 82.9,
-      "readings": 2421
+      "uptime_pct": 83.9,
+      "readings": 3856
     }
   ],
   "by_source": [
     {
       "source": "machines",
       "total_quantity": 2301816.0,
-      "uptime_pct": 44.5,
-      "readings": 191690
+      "uptime_pct": 46.0,
+      "readings": 285688
     }
   ],
   "by_category": [
     {
       "category": "Electro-Tin",
       "total_quantity": 2301816.0,
-      "uptime_pct": 92.6,
-      "readings": 2794
+      "uptime_pct": 92.0,
+      "readings": 3161
     },
     {
       "category": "1900",
       "total_quantity": 1470361.0,
-      "uptime_pct": 31.3,
-      "readings": 5907
+      "uptime_pct": 36.1,
+      "readings": 9719
     },
     {
       "category": "Multi-Wire",
       "total_quantity": 1390385.0,
-      "uptime_pct": 65.9,
-      "readings": 481
+      "uptime_pct": 70.9,
+      "readings": 740
+    },
+    {
+      "category": "GC-EXTRUDER",
+      "total_quantity": 521386.7,
+      "uptime_pct": 42.2,
+      "readings": 19870
     },
     {
       "category": "70-MM",
       "total_quantity": 314299.0,
-      "uptime_pct": 59.9,
-      "readings": 2878
+      "uptime_pct": 49.6,
+      "readings": 4318
     },
     {
-      "category": "GC-EXTRUDER",
-      "total_quantity": 312061.2,
-      "uptime_pct": 41.7,
-      "readings": 14118
+      "category": "Fluoro-Polymer",
+      "total_quantity": 210417.6,
+      "uptime_pct": 84.8,
+      "readings": 2866
     },
     {
       "category": "TPL-Unit",
       "total_quantity": 201526.2,
-      "uptime_pct": 75.6,
-      "readings": 5756
+      "uptime_pct": 71.9,
+      "readings": 8472
     },
     {
       "category": "150MM-Extruder",
       "total_quantity": 174544.0,
-      "uptime_pct": 64.5,
-      "readings": 2872
+      "uptime_pct": 60.6,
+      "readings": 3792
+    },
+    {
+      "category": "FP-Extruder",
+      "total_quantity": 130769.4,
+      "uptime_pct": 83.9,
+      "readings": 3856
     },
     {
       "category": "60MM-PVC",
       "total_quantity": 124619.6,
-      "uptime_pct": 53.2,
-      "readings": 2877
-    },
-    {
-      "category": "FP-Extruder",
-      "total_quantity": 123139.9,
-      "uptime_pct": 82.9,
-      "readings": 2421
-    },
-    {
-      "category": "Pair-Twister",
-      "total_quantity": 109659.6,
-      "uptime_pct": 76.6,
-      "readings": 1487
+      "uptime_pct": 55.1,
+      "readings": 4317
     }
   ]
 }
