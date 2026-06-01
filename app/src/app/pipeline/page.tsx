@@ -1,6 +1,6 @@
 'use client'
 
-import { getStats, fmtNum, fmt, fmtPct } from '@/lib/stats'
+import { useDynamicStats, fmtNum, fmt, fmtPct } from '@/lib/stats'
 
 const LOG_SAMPLE = [
   { time:'12:12:36', level:'INFO',    msg:'Pipeline started  RAW_DIR=.../Raw data' },
@@ -48,7 +48,7 @@ const STEPS = [
 ]
 
 export default function PipelinePage() {
-  const { summary } = getStats()
+  const { summary } = useDynamicStats()
 
   const chips = [
     { label:'Files',        value: fmtNum(summary.files_processed), color:'#6366f1' },

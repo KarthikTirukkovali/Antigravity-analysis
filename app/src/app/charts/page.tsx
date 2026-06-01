@@ -24,7 +24,7 @@ const TT = ({ active, payload, label }: any) => {
 
 export default function ChartsPage() {
   const stats = useDynamicStats()
-  const { daily_production, daily_uptime, by_machine, top_machines, by_category, by_source } = stats
+  const { daily_production, daily_uptime, by_machine, top_machines, by_category } = stats
 
   const dailyProd = (daily_production as any[]).map(d => ({
     date: d.date?.slice(5), qty: Math.round(d.total_qty),

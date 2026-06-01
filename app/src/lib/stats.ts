@@ -87,7 +87,7 @@ export function useDynamicStats() {
       
       // Machine stats
       if (!machineStats[row.machine]) {
-        machineStats[row.machine] = { speedSum: 0, count: 0, activeReadings: 0, totalReadings: 0, category: row.category, maxSpeed: 0 }
+        machineStats[row.machine] = { speedSum: 0, count: 0, activeReadings: 0, totalReadings: 0, category: row.category || 'Other', maxSpeed: 0 }
       }
       machineStats[row.machine].speedSum += row.avg_speed
       machineStats[row.machine].count += 1
@@ -130,6 +130,8 @@ export function useDynamicStats() {
       active_readings,
       unique_machines: unique_machines.size,
       unique_dates: unique_dates.size,
+      files_processed: statsData.summary.files_processed,
+      files_skipped: statsData.summary.files_skipped,
     }
 
     // Rebuild daily_production
